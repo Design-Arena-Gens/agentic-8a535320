@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --hologram: rgba(30, 128, 255, 0.18);
+  --hud-border: rgba(111, 217, 255, 0.48);
+  --hud-core: rgba(30, 158, 255, 0.26);
+  --hud-core-strong: rgba(20, 203, 255, 0.5);
+  --jarvis-glow: 0 0 50px rgba(20, 203, 255, 0.45);
+}
+
+@theme inline {
+  --color-background: #05030f;
+  --color-foreground: #f8fafc;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, rgba(23, 92, 255, 0.2), transparent 45%),
+    radial-gradient(circle at bottom, rgba(14, 14, 34, 0.85), #02010a 60%);
+  color: var(--color-foreground);
+}
+
+::selection {
+  background: rgba(111, 217, 255, 0.35);
+  color: #0b1329;
+}
